@@ -39,7 +39,8 @@ namespace IntroEmailApplication
           Console.WriteLine("Message sent succesfully!");
         }
 
-        Console.Write("\nWould you like to send another email? (Y/N): ");
+        Console.WriteLine();
+        Console.Write("Would you like to send another email? (Y/N): ");
 
         if (Console.ReadKey().Key != ConsoleKey.Y)
         {
