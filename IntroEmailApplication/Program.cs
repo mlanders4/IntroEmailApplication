@@ -5,6 +5,9 @@ namespace IntroEmailApplication
 {
   internal class Program
   {
+    private const SMTP_PORT = 465;
+    private const IS_SSL_CONNECTION = true;
+
     static void Main(string[] args)
     {
       Console.WriteLine("Welcome to the command line email client!");
@@ -31,7 +34,7 @@ namespace IntroEmailApplication
 
         using (var client = new SmtpClient())
         {
-          client.Connect("smtp.gmail.com", 465, true);
+          client.Connect("smtp.gmail.com", SMTP_PORT, IS_SSL_CONNECTION);
           client.Authenticate("jaredhoyt", "abcdefghijklmnop"); // TODO: update to your own username and APP PASSWORD (this is different from your normal password)
           client.Send(mail);
           client.Disconnect(true);
