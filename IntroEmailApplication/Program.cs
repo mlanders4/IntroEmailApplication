@@ -5,8 +5,8 @@ namespace IntroEmailApplication
 {
   internal class Program
   {
-    private const SMTP_PORT = 465;
-    private const IS_SSL_CONNECTION = true;
+    private const int SmtpPort = 465;
+    private const bool IsSslConnection = true;
 
     static void Main(string[] args)
     {
@@ -34,7 +34,7 @@ namespace IntroEmailApplication
 
         using (var client = new SmtpClient())
         {
-          client.Connect("smtp.gmail.com", SMTP_PORT, IS_SSL_CONNECTION);
+          client.Connect("smtp.gmail.com", SmtpPort, IsSslConnection);
           client.Authenticate("jaredhoyt", "abcdefghijklmnop"); // TODO: update to your own username and APP PASSWORD (this is different from your normal password)
           client.Send(mail);
           client.Disconnect(true);
