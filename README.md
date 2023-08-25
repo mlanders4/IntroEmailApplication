@@ -50,7 +50,7 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
 6. Add meaningful comments to the code.
 
-7. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio. Turn in the `Program.cs` file when you are done.
+7. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio Code. Turn in the `Program.cs` file when you are done.
 
 ## Advanced Exercise (Optional)
 
