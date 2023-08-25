@@ -24,7 +24,7 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
 4. Open the solution file, go to `Program.cs`, modify the *name*, *email address*, *username*, and *password* in the code and run the console application (there are `TODO` comments showing you where to update the code).
 
-5. Look at the ReSharper warnings in the right side of the code pane and resolve each one.
+5. From your menu bar, click `Extensions -> Inspect -> Code Issues in Solution`, look at the ReSharper warnings in the code pane, and resolve each one.
 
 6. Add `try-catch` blocks where appropriate.
 
