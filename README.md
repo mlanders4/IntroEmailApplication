@@ -22,15 +22,17 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
 3. Create an "app password" by following the steps listed [here](https://support.google.com/accounts/answer/185833?hl=en). **PLEASE USE A THROW-AWAY ACCOUNT FOR THIS LAB.**
 
-4. Open the solution file, go to `Program.cs`, modify the *name*, *email address*, *username*, and *password* in the code and run the console application (there are `TODO` comments showing you where to update the code).
+4. Open the project in Visual Studio and navigate to `Program.cs`.
 
-5. From your menu bar, click `Extensions -> Inspect -> Code Issues in Solution`, look at the ReSharper warnings in the code pane, and resolve each one.
+5. Modify the *name*, *email address*, *username*, and *password* (there are `TODO` comments showing you where to update the code) and run the console application.
 
-6. Add `try-catch` blocks where appropriate.
+6. From your menu bar, click `Extensions -> Inspect -> Code Issues in Solution`, look at the ReSharper warnings in the code pane, and resolve each one.
 
-7. Add meaningful comments to the code.
+7. Add `try-catch` blocks where appropriate.
 
-8. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio. Turn in the `Program.cs` file when you are done.
+8. Add meaningful comments to the code.
+
+9. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio. Turn in the `Program.cs` file when you are done.
 
 ## Mac/Windows/Linux
 
@@ -44,13 +46,15 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
 3. Create an "app password" by following the steps listed [here](https://support.google.com/accounts/answer/185833?hl=en). **PLEASE USE A THROW-AWAY ACCOUNT FOR THIS LAB.**
 
-4. Open the solution file, go to `Program.cs`, modify the *name*, *email address*, *username*, and *password* in the code and run the console application (there are `TODO` comments showing you where to update the code).
+4. Open the project in Visual Studio Code and navigate to `Program.cs`.
 
-5. Add `try-catch` blocks where appropriate.
+5. Modify the *name*, *email address*, *username*, and *password* (there are `TODO` comments showing you where to update the code) and run the console application.
 
-6. Add meaningful comments to the code.
+6. Add `try-catch` blocks where appropriate.
 
-7. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio Code. Turn in the `Program.cs` file when you are done.
+7. Add meaningful comments to the code.
+
+8. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio Code. Turn in the `Program.cs` file when you are done.
 
 ## Advanced Exercise (Optional)
 
