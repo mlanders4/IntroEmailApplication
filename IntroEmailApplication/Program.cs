@@ -12,9 +12,9 @@ namespace IntroEmailApplication
     {
       Console.WriteLine("Welcome to the command line email client!");
 
-      var loop = true;
+      var user_wants_to_send_message = true;
 
-      while (loop)
+      while (user_wants_to_send_message)
       {
         Console.WriteLine();
         Console.WriteLine("New Message");
@@ -39,7 +39,7 @@ namespace IntroEmailApplication
           client.Send(mail);
           client.Disconnect(true);
 
-          Console.WriteLine("Message sent succesfully!");
+          Console.WriteLine("Message sent successfully!");
         }
 
         Console.WriteLine();
@@ -47,7 +47,7 @@ namespace IntroEmailApplication
 
         if (Console.ReadKey().Key != ConsoleKey.Y)
         {
-          loop = false;
+          user_wants_to_send_message = false;
         }
       }
     }
