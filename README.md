@@ -24,15 +24,17 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
 4. Open the project in Visual Studio and navigate to `Program.cs`.
 
-5. Modify the *name*, *email address*, *username*, and *password* (there are `TODO` comments showing you where to update the code) and run the console application.
+5. Modify the *name*, *email address*, *username*, and *password* (there are `TODO` comments showing you where to update the code).
 
-6. From your menu bar, click `Extensions -> Inspect -> Code Issues in Solution`, look at the ReSharper warnings in the code pane, and resolve each one.
+6. Run the application by hitting the green, outlined play button (*Start Without Debugging*) or by hitting `Ctrl + F5`. Send an email and ensure that the program works correctly.
 
-7. Add `try-catch` blocks where appropriate.
+7. From your menu bar, click `Extensions -> Inspect -> Code Issues in Solution`, look at the ReSharper warnings in the code pane, and resolve each one.
 
-8. Add meaningful comments to the code.
+8. Add `try-catch` blocks where appropriate.
 
-9. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio. Turn in the `Program.cs` file when you are done.
+9. Add meaningful comments to the code.
+
+10. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio. Turn in the `Program.cs` file when you are done.
 
 ## Mac/Windows/Linux
 
@@ -48,13 +50,21 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
 4. Open the project in Visual Studio Code and navigate to `Program.cs`.
 
-5. Modify the *name*, *email address*, *username*, and *password* (there are `TODO` comments showing you where to update the code) and run the console application.
+5. Modify the *name*, *email address*, *username*, and *password* (there are `TODO` comments showing you where to update the code).
 
-6. Add `try-catch` blocks where appropriate.
+6. Run the program by opening a terminal instance in the `IntroEmailApplication/IntroEmailApplication` directory and running the following command:
 
-7. Add meaningful comments to the code.
+    ```bash
+    dotnet run
+    ```
 
-8. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio Code. Turn in the `Program.cs` file when you are done.
+    Send an email and ensure that the program works correctly.
+
+7. Add `try-catch` blocks where appropriate.
+
+8. Add meaningful comments to the code.
+
+9. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio Code. Turn in the `Program.cs` file when you are done.
 
 ## Advanced Exercise (Optional)
 
