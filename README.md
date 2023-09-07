@@ -26,6 +26,17 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
 5. Run the application by hitting the green, outlined play button (*Start Without Debugging*) or by hitting `Ctrl + F5`. Send an email and ensure that the program works correctly.
 
+    **Note:** if you are getting errors such as "the MailKit package cannot be found in the Microsoft Visual Studio Offline Packages" or something similar, in the menu bar navigate to `Project -> Manage NuGet Packages` and ensure that you have *nuget.org* as a Package Source. If not, click the settings icon to the right of the dropdown, click the green plus button, and add the following package source:
+
+    ```bash
+    Name: nuget.org
+    Source: https://api.nuget.org/v3/index.json
+    ```
+
+    Click *update* and then hit *OK*. This should allow you to now access the *nuget.org* in the Package Source dropdown.
+
+    You should be able to properly run the project, but if you are still missing the MailKit package, you might not have the MailKit package installed and will need to manually install it. Navigate back to the NuGet Package Manager and install MailKit.
+
 6. From your menu bar, click `Extensions -> Inspect -> Code Issues in Solution`, look at the ReSharper warnings in the code pane, and resolve each one.
 
 7. Add `try-catch` blocks where appropriate.
