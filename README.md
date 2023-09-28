@@ -52,6 +52,7 @@ In this lab exercise we will learn how to send an email from a C# console applic
     - [.NET 7.0](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
     - [Visual Studio Code](https://code.visualstudio.com/)
         - `C#` extension from Microsoft
+        - `Visual NuGet` extension from Full Stack Spider
 
 2. Create an "app password" by following the steps listed [here](https://support.google.com/accounts/answer/185833?hl=en). **PLEASE USE A THROW-AWAY ACCOUNT FOR THIS LAB.**
 
@@ -59,7 +60,9 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
 4. Navigate to `Program.cs` and modify the *name*, *email address*, *username*, and *password* (there are `TODO` comments showing you where to update the code).
 
-5. Run the program by opening a terminal instance in the `IntroEmailApplication/IntroEmailApplication` directory and running the following command:
+5. Right-click on the `IntroEmailApplication.csproj` file, select *Visual Nuget: Manage Packages*, and install the *MailKit* package.
+
+6. Run the program by opening a terminal instance in the `IntroEmailApplication/IntroEmailApplication` directory and running the following command:
 
     ```bash
     dotnet run
@@ -67,11 +70,11 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
     Send an email and ensure that the program works correctly.
 
-6. Add `try-catch` blocks where appropriate.
+7. Add `try-catch` blocks where appropriate.
 
-7. Add meaningful comments to the code.
+8. Add meaningful comments to the code.
 
-8. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio Code. Turn in the `Program.cs` file when you are done.
+9. Take some time to hover over the various classes used and get comfortable with Intellisense in Visual Studio Code. Turn in the `Program.cs` file when you are done.
 
 ## Advanced Exercise (Optional)
 
