@@ -12,7 +12,7 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
 1. Download the following:
 
-    - [.NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+    - [.NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
     - [Resharper](https://www.jetbrains.com/resharper/download/#section=web-installer)
     - [Visual Studio 2022](https://visualstudio.microsoft.com/)
 
@@ -49,7 +49,7 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
 1. Download the following:
 
-    - [.NET 8.0][(https://dotnet.microsoft.com/en-us/download/dotnet/7.0)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+    - [.NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
     - [Visual Studio Code](https://code.visualstudio.com/)
         - `C#` extension from Microsoft
         - `Visual NuGet` extension from Full Stack Spider
