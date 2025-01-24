@@ -20,7 +20,7 @@ In this lab exercise we will learn how to send an email from a C# console applic
 
 2. Create an "app password" by following the steps listed [here](https://support.google.com/accounts/answer/185833?hl=en). **PLEASE USE A THROW-AWAY ACCOUNT FOR THIS LAB.**
 
-3. Open Visual Studio and select the *Clone a repository* option. Input the URL of this repository (**<https://github.com/jared-v-hoyt/IntroEmailApplication>**) and click the *Clone* button.
+3. Open Visual Studio and select the *Clone a repository* option. Input the URL of this repository (**<(https://github.com/csce361Github/IntroEmailApplication.git)>**) and click the *Clone* button.
 
 4. Navigate to `Program.cs` and modify the *name*, *email address*, *username*, and *password* (there are `TODO` comments showing you where to update the code).
 
