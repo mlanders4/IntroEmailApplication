@@ -1,45 +1,68 @@
-﻿using MailKit.Net.Smtp;
+using System;
+using MailKit.Net.Smtp;
 using MimeKit;
 
 namespace IntroEmailApplication
 {
     internal class Program
     {
-        private const int SmtpPort = 465;
-        private const bool IsSslConnection = true;
+        private const int SmtpPort = 465; // SMTP port for secure email sending
+        private const bool IsSslConnection = true; // Enable SSL for security
 
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the command line email client!");
 
-            var user_wants_to_send_message = true;
+            bool userWantsToSendMessage = true;
 
-            while (user_wants_to_send_message)
+            while (userWantsToSendMessage)
             {
-                Console.WriteLine();
-                Console.WriteLine("New Message");
-
-                var mail = new MimeMessage();
-
-                mail.From.Add(new MailboxAddress("Jared Hoyt", "jaredhoyt@gmail.com")); // TODO: update to your own name and email address
-
-                Console.Write("To: ");
-                mail.To.Add(new MailboxAddress("", Console.ReadLine()));
-
-                Console.Write("Subject: ");
-                mail.Subject = Console.ReadLine();
-
-                Console.Write("Body: ");
-                mail.Body = new TextPart("plain") { Text = Console.ReadLine() };
-
-                using (var client = new SmtpClient())
+                try
                 {
-                    client.Connect("smtp.gmail.com", SmtpPort, IsSslConnection);
-                    client.Authenticate("jaredhoyt", "abcd efgh ijkl mnop"); // TODO: update to your own username and APP PASSWORD (this is different from your normal password)
-                    client.Send(mail);
-                    client.Disconnect(true);
+                    Console.WriteLine();
+                    Console.WriteLine("New Message");
 
-                    Console.WriteLine("Message sent successfully!");
+                    var mail = new MimeMessage();
+
+                    // Update sender information
+                    mail.From.Add(new MailboxAddress("Matthew Landers", "matthewlanders0429@gmail.com"));
+
+                    Console.Write("To: ");
+                    mail.To.Add(new MailboxAddress("", Console.ReadLine()));
+
+                    Console.Write("Subject: ");
+                    mail.Subject = Console.ReadLine();
+
+                    Console.Write("Body: ");
+                    mail.Body = new TextPart("plain") { Text = Console.ReadLine() };
+
+                    using (var client = new SmtpClient())
+                    {
+                        try
+                        {
+                            // Connect to the SMTP server
+                            client.Connect("smtp.gmail.com", SmtpPort, IsSslConnection);
+
+                            // Authenticate with your email credentials
+                            client.Authenticate("matthewlanders0429", "!QAZ2wsx!QAZ2wsx");
+
+                            // Send the email
+                            client.Send(mail);
+                            Console.WriteLine("Message sent successfully!");
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Error sending email: " + ex.Message);
+                        }
+                        finally
+                        {
+                            client.Disconnect(true); // Ensure client disconnects
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("An error occurred: " + ex.Message);
                 }
 
                 Console.WriteLine();
@@ -47,7 +70,7 @@ namespace IntroEmailApplication
 
                 if (Console.ReadKey().Key != ConsoleKey.Y)
                 {
-                    user_wants_to_send_message = false;
+                    userWantsToSendMessage = false;
                 }
             }
         }
